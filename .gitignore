@@ -1,5 +1,9 @@
-# Mac
-.DS_Store
-
 # Node
 /node_modules
+
+# App
+/app/*
+!/app/.gitkeep
+
+# Mac
+.DS_Store
