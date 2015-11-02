@@ -1,5 +1,8 @@
+@import "conf/color";
+@import "conf/font";
 
 body{
-  color: #fff;
-  background-color: #30CD73;
+  color: $color-font-normal;
+  background-color: $color-bg;
+  font-family: $font-family-title;
 }

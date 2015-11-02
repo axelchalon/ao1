@@ -27,5 +27,5 @@ gulp.task('watch', function () {
   browserSync.init({ server: { baseDir: '' } });
 
   gulp.watch("client/templates/*.html", ['nunjucks']);
-  gulp.watch("client/scss/*.scss", ['scss']);
+  gulp.watch("client/scss/**/*.scss", ['scss']);
 });
