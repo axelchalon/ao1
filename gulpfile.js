@@ -17,10 +17,11 @@ gulp.task('scss', function () {
 
 gulp.task('nunjucks', function () { 
   nunjucksRender.nunjucks.configure(['client/templates/']); 
-  return gulp.src('client/templates/*.html') 
-    .pipe(nunjucksRender()) 
-    .pipe(gulp.dest('app')) 
-    .pipe(reload({stream: true})); 
+  return gulp.src('client/templates/*.html')
+    .pipe(plumber())
+    .pipe(nunjucksRender())
+    .pipe(gulp.dest('app'))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('watch', function () {
