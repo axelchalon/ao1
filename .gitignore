@@ -2,8 +2,7 @@
 /node_modules
 
 # Templates
-/dist/templates/*
-!/dist/templates/.gitkeep
+/dist/*.html
 
 # Compiled CSS
 /dist/css/app.css
