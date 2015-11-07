@@ -4,6 +4,7 @@ var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var del = require('del');
 
+
 // BrowserSync
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
@@ -18,8 +19,8 @@ gulp.task('scss', function () {
 
 gulp.task('nunjucks', function () {
 	nunjucksRender.nunjucks.configure(['src/templates/']);
+	del.sync('dist/*.html');
 	return gulp.src('src/templates/*.html')
-		.pipe(del('dist/*.html'))
 		.pipe(plumber())
 		.pipe(nunjucksRender())
 		.pipe(gulp.dest('dist/'))
@@ -29,12 +30,13 @@ gulp.task('nunjucks', function () {
 });
 
 gulp.task('watch', function ()  {
+	// BrowserSync
 	browserSync.init({
 		server: {
 			baseDir: 'dist'
 		}
 	});
 
-	gulp.watch("src/templates/*.html", ['nunjucks']);
+	gulp.watch("src/templates/**/*.html", ['nunjucks']);
 	gulp.watch("src/scss/**/*.scss", ['scss']);
 });
