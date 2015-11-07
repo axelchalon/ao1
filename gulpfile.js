@@ -25,7 +25,7 @@ gulp.task('nunjucks', function () {
 });
 
 gulp.task('watch', function () {
-  browserSync.init({ server: { baseDir: '' } });
+  browserSync.init({ server: { baseDir: 'dist' } });
 
   gulp.watch("src/templates/*.html", ['nunjucks']);
   gulp.watch("src/scss/**/*.scss", ['scss']);
