@@ -1,9 +1,13 @@
 # Node
 /node_modules
 
-# App
-/app/*
-!/app/.gitkeep
+# Templates
+/dist/templates/*
+!/dist/templates/.gitkeep
+
+# Compiled CSS
+/dist/css/app.css
+# !/dist/css/.gitkeep
 
 # Mac
 .DS_Store
