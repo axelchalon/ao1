@@ -7,6 +7,7 @@
 @import "elements/footer";
 @import "elements/icon";
 @import "elements/aside";
+@import "elements/fiche";
 
 html {
   box-sizing: border-box;
@@ -19,11 +20,18 @@ body{
   color: $color-font-normal;
   background-color: $color-bg;
   font-family: $font-family-title;
+  &.white{
+    background-color: #fff;
+  }
 }
 
 a{
   color:inherit;
   text-decoration: none;
+}
+
+hr{
+  border:inherit;
 }
 
 .main{

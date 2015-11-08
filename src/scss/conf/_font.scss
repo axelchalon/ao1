@@ -2,8 +2,13 @@
     Font Configuration
  */
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800|Roboto+Slab:400,700,300|Lato:400,300,700,900,700italic,900italic);
+
 $font-normal-size: 1em;
 $font-family-title: "Open Sans";
+$roboto: 'Roboto Slab', serif;
+$lato: 'Lato', sans-serif;
+$opensans: 'Open Sans', sans-serif;
 
 h1, h2{
   position: relative;
@@ -34,7 +39,7 @@ h2{
 }
 
 h4{
-  font-family: OpenSans;
+  font-family: $opensans;
   color:  #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -47,4 +52,77 @@ p{
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+}
+
+.fiche{
+  header.infos{
+    .info{
+      h4{
+        font-family: $opensans;
+        color:  #0b6ba8;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+      }
+      h5{
+        font-family: $opensans;
+        color:  #0b6ba8;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+  }
+  article{
+    p{
+      &.chapeau{
+        font-family: $lato;
+        color:  #0b6ba8;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        text-indent: 40px;
+      }
+    }
+    h2{
+      font-family: $lato;
+      color:  #0b6ba8;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+      margin-bottom: 20px;
+      &:before{
+        content: none;
+      }
+    }
+    h3{
+      font-family: $roboto;
+      color:  #000000;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    p{
+      font-family: $roboto;
+      color:  #000000;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    hr{
+      height: 3px; width: 356px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background-color: $bleu-clair;
+      border:none;
+    }
+  }
 }
