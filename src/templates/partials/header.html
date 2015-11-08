@@ -15,7 +15,9 @@ top
 <header class="header">
   <div class="left">
     <div class="menu-burger">
-      <a href="#" class="menu-burger-icon"></a>
+      <a href="#" class="menu-burger-icon">
+        <i class="burger"></i>
+      </a>
     </div>
 
     <div class="search">
@@ -39,11 +41,13 @@ top
 </header>
 
 
-<header class="hero" style="background-image: url('media/bg-header.jpg');">
+<header class="hero" style="background-image: url('media/{{bg_header}}');">
   <div class="title">
-    <h1>La grande école du numérique <span>des formations gratuites et accessibles à tous</span></h1>
+    <h1>{{text_header}} <span>{{span_header}}</span></h1>
   </div>
+  {% if catch_button %}
   <div class="catch-button">
     <a href="#" class="btn">découvrir les métiers<i class="icon ordi"></i></a><a href="#" class="btn fill white">localiser une formation<i class="icon place"></i></a>
   </div>
+  {% endif %}
 </header>

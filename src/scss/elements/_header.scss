@@ -11,8 +11,20 @@ header.header{
     align-items: center;
   }
   .menu-burger{
-    background-color: red;
+    background-color: $bleu-fonce;
     width: 46px; height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      background-color: transparent;
+      margin: 0 auto;
+      &.burger{
+        background-image: url('../media/burger.png');
+        width:23px; height: 15px;
+        display: block;
+      }
+    }
   }
   .search{
     width: 46px; height: 46px;
