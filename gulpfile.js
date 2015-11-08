@@ -5,6 +5,7 @@ var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var del = require('del');
+var concat = require('gulp-concat');
 
 
 
@@ -14,6 +15,7 @@ var processors = [
 		require('postcss-mixins'),
 		require('postcss-simple-vars'),
 		require('postcss-nested'),
+		require('cssnano'),
 		require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] })
 	];
 
@@ -28,6 +30,14 @@ gulp.task('scss', function () {
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('dist/css/'))
 		.pipe(browserSync.stream());
+});
+
+gulp.task('js', function () {
+	gulp.src('src/js/**/*.js')
+	.pipe(plumber())
+	.pipe(concat('app.js'))
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.stream());
 });
 
 gulp.task('nunjucks', function () {
@@ -52,4 +62,5 @@ gulp.task('watch', function ()  {
 
 	gulp.watch("src/templates/**/*.html", ['nunjucks']);
 	gulp.watch("src/scss/**/*.scss", ['scss']);
+	gulp.watch("src/js/**/*.js", ['js']);
 });
