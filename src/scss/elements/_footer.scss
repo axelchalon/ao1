@@ -1,6 +1,8 @@
 footer.footer{
   text-align: left;
-  .wrap
+  .wrap{
+    flex-direction:column;
+  }
   h4{
     text-align: left;
     margin-top: 50px;

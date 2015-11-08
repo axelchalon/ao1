@@ -1,0 +1,25 @@
+aside{
+  &.news{
+    article{
+      margin-left: 45px;
+      border-bottom: 1px solid $bleu-clair;
+      h4{
+        color:$bleu-main;
+        text-align: left;
+        margin-top: 25px;
+      }
+      hr{
+        height:1px; width: 14px;
+        background-color: $bleu-main;
+      }
+      p{
+        color:  #4d6069;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
