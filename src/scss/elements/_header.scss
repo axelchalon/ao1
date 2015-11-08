@@ -3,6 +3,9 @@ header.header{
   width: 100%; height: 46px;
   display: flex;
   align-items: center;
+  i{
+    background-color: transparent;
+  }
   .left, .right, .logo{
     width: calc(100%/3);
   }
@@ -17,7 +20,6 @@ header.header{
     align-items: center;
     justify-content: center;
     i {
-      background-color: transparent;
       margin: 0 auto;
       &.burger{
         background-image: url('../media/burger.png');
@@ -29,6 +31,16 @@ header.header{
   .search{
     width: 46px; height: 46px;
     background-color: $gris-semi-fonce;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+      &.search{
+        background-image: url('../media/search.png');
+        width:21px; height: 20px;
+        display: block;
+      }
+    }
   }
   .logo{
     margin: 0 auto;
