@@ -315,7 +315,8 @@ hr {
 					.text-side {
 
 						padding: 50px;
-
+						position: relative;
+						
 						h2 {
 							margin-bottom: 25px;
 						}
@@ -333,6 +334,22 @@ hr {
 							text-align: left;
 							li { zoom: 0.75; }
 						}
+						
+						.next, .prev {
+							position: absolute;
+							bottom: 20px;
+							width: 190px;
+							height: 46px;
+							transition: background-color 0.3s;
+						}
+						
+						.next:hover, .prev:hover {
+							background-color: #E7E7E7;	
+							transition: none;
+						}
+						
+						.prev { left: 20px; background: url("../media/prev.png"); }
+						.next { right: 20px; background: url("../media/next.png"); }
 					}
 				}
 			}
