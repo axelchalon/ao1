@@ -155,6 +155,8 @@ hr {
 		}
 	}
 	
+}
+
 	ul.jobs {
 		text-align: center;
 		li {
@@ -189,7 +191,6 @@ hr {
 			}
 		}	
 	}
-}
 
 .main.faq {
 	ul.posts {
@@ -216,6 +217,148 @@ hr {
 			.right {
 				color: $gris-clair; 
 				i { float: none; }
+			}
+		}
+	}
+}
+
+.main.snapchat {
+	
+	.header {
+		background: $bleu-main;
+		height: 90px;
+		
+		position: relative;
+		p { 
+			position: absolute; left: 0; right: 50%; text-align: center; top: 0; bottom: 0;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-style: 18px; color: white;
+			line-height: 90px; vertical-align: middle;
+		}
+		
+		nav { 
+			position: absolute; left: 50%; transform: translateX(50px); right: 51px; text-align: center; top: 0; bottom: 0;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-style: 18px; color: white;
+			line-height: 90px; vertical-align: middle;
+			text-align: left;
+			
+			&:before {
+			content: " ";
+			height: 2px; width: 100px;
+				background: white;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 46px;
+				width: 270px;
+			}
+			
+			div {
+				border-radius: 50%;
+				width: 25px;
+				height: 25px;
+				border: 4px solid white;
+				position: relative;
+				margin-right: 20px;
+				display: inline-block;
+				background: $bleu-main;
+				cursor: pointer;
+				vertical-align: middle;
+				
+				&:before {
+					content: " ";
+					display: block;
+					background: white;
+					top: 3px; left: 3px; right: 3px; bottom: 3px;
+					border-radius: 50%;
+					position: absolute;
+					opacity: 0;
+					transition: 0.5s;
+					
+				}
+				
+				&.done:before, &:hover:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	
+	> .wrap.slides {
+		
+		
+		
+		overflow: hidden;
+		* { white-space: normal; }
+		
+		.slides-inner {
+			white-space: nowrap;
+			transition: transform 0.6s ease-in-out;
+			
+			.slide {
+
+				vertical-align: bottom;
+				display: inline-block;
+				width: 100%;
+
+				> .wrap {
+					display: flex; 
+
+					.left, .right {
+						width: 50%;
+						height: 720px;
+					}
+
+					.text-side {
+
+						padding: 50px;
+
+						h2 {
+							margin-bottom: 25px;
+						}
+
+						> h4 {
+							text-transform: uppercase;
+							color: $bleu-main;
+							font-weight: bold;
+							text-align: left;
+							margin-top: 50px;
+							margin-left: 35px;
+						}
+
+						.jobs {
+							text-align: left;
+							li { zoom: 0.75; }
+						}
+					}
+				}
+			}
+			
+			.slide1 .left {
+				 background: url("../media/snapchat1.jpg") no-repeat center center /cover;
+			}
+			
+			.slide2 .right {
+				 background: url("../media/snapchat2.jpg") no-repeat center center /cover;
+			}
+			
+			.slide3 .left {
+				 background: url("../media/snapchat3.jpg") no-repeat center center /cover;
+			}
+			
+			.slide4 .right {
+				 background: url("../media/snapchat4.jpg") no-repeat center center /cover;
+			}
+			
+			.slide5 .left {
+				 background: url("../media/snapchat5.jpg") no-repeat center center /cover;
+			}
+			
+			.slide6 .right {
+				 background: url("../media/snapchat6.jpg") no-repeat center center /cover;
 			}
 		}
 	}
