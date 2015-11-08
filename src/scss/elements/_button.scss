@@ -1,0 +1,16 @@
+.btn{
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 20px;
+  color:#fff;
+  &.fill{
+    &.white{
+      background-color: #fff;
+      color: $bleu-main;
+    }
+  }
+}

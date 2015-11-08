@@ -5,6 +5,14 @@ var sass = require('gulp-sass');
 var del = require('del');
 
 
+var postcss = require('gulp-postcss');
+var processors = [
+		require('postcss-mixins'),
+		require('postcss-simple-vars'),
+		require('postcss-nested'),
+		require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] })
+	];
+
 // BrowserSync
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
@@ -13,6 +21,7 @@ gulp.task('scss', function () {
 	gulp.src('src/scss/app.scss')
 		.pipe(plumber())
 		.pipe(sass())
+		.pipe(postcss(processors))
 		.pipe(gulp.dest('dist/css/'))
 		.pipe(browserSync.stream());
 });

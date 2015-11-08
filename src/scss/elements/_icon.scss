@@ -1,0 +1,15 @@
+i{
+  background-color: red;
+  &.icon{
+    height: 15px;
+    display: inline-block;
+    &.ordi{
+      background-image: url("media/computer.svg");
+      background-color: red;
+      width: 11px;
+    }
+    &.place{
+
+    }
+  }
+}
