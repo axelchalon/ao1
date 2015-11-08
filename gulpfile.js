@@ -1,8 +1,12 @@
+require('es6-promise').polyfill();
+
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var del = require('del');
+
+
 
 
 var postcss = require('gulp-postcss');

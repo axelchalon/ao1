@@ -28,21 +28,26 @@ a{
 
 .main{
   margin-top: 40px;
+  padding: 80px; 
 }
 .wrap{
-  width:1270px;
+  /*width:1270px;*/
   margin: 0 auto;
   display: flex;
   .column-left{
     width: 912px;
+	width: 75%;
   }
   .column-right{
     width: 336px;
+	width: 25%;
     margin-left: 24px;
   }
 }
 
 article.step{
+  background-size: cover;
+  background-position: center center;
   height: 354px;
   position: relative;
   margin-bottom: 43px;
@@ -53,6 +58,11 @@ article.step{
     left:0; right: 409px; bottom:0;
     padding-left: 47px;
     padding-top: 30px;
+	  width: 350px;
+	&.right { 
+		right: 0;
+		left: auto;
+	}
     h2{
       margin-bottom: 20px;
       &:before{
