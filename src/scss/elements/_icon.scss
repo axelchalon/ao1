@@ -3,12 +3,35 @@ i{
     height: 15px;
     display: inline-block;
     &.ordi{
-      background-image: url("media/computer.svg");
-      background-color: red;
+      background-image: url("../media/computer.svg");
       width: 11px;
     }
     &.place{
 
+    }
+    &.formation{
+      background-image: url("../media/formation.png");
+      width: 31px;
+      height: 16px;
+      margin: 0 auto;
+    }
+    &.perspective{
+      background-image: url("../media/perspective.png");
+      width: 21px;
+      height: 30px;
+      margin: 0 auto;
+    }
+    &.salaire{
+      background-image: url("../media/argent.png");
+      width: 30px;
+      height: 26px;
+      margin: 0 auto;
+    }
+    &.status{
+      background-image: url("../media/status.png");
+      width: 29px;
+      height: 30px;
+      margin: 0 auto;
     }
 	&.expand {
 	  background-image: url("../media/expand.png");
