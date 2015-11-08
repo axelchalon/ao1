@@ -8,27 +8,28 @@
 
 {% block y %}
 
+
 <div class="main parcourir-metiers">
 	
 	<div class="wrap">
 		<h3>Choisissez un ou plusieurs domaine(s)</h3>
 		
 		<ul class="filters">
-			<li>Communication &amp; marketing</li>
-			<li>Programmation &amp; développement</li>
-			<li>Formation &amp; assistance</li>
-			<li>Conception &amp; gestion de projet</li>
-			<li>Infrastructure &amp; réseau</li>
-			<li>Production &amp; gestion de contenu</li>
-			<li>Interfaces &amp; création numérique</li>
+			<li data-group="communication"><a href="#" >Communication &amp; marketing</a></li>
+			<li data-group="dev"><a href="#">Programmation &amp; développement</a></li>
+			<li data-group="assist"><a href="#">Formation &amp; assistance</a></li>
+			<li data-group="conception"><a href="#">Conception &amp; gestion de projet</a></li>
+			<li data-group="infrastructure"><a href="#">Infrastructure &amp; réseau</a></li>
+			<li data-group="content"><a href="#">Production &amp; gestion de contenu</a></li>
+			<li data-group="ui"><a href="#" >Interfaces &amp; création numérique</a></li>
 		</ul>
 	</div>
 
 	<div class="wrap">
 		
 		<ul class="jobs">
-			{% for counter in [0,0,0,0,0,0] %}
-			<li>
+			{% for counter in [['communication','ui'], ['communication','content'], ['communication','ui'], ['communication','ui'], ['communication','ui'], ['communication'], ['ui'], ['communication']] %}
+			<li data-groups="{{counter}}">
 				<div class="inner-wrap">
 					<h4>Développeur front</h4>
 					<hr>
@@ -41,10 +42,47 @@
 	
 </div>
 
+<script type="text/javascript" src="https://rawgit.com/Vestride/Shuffle/master/dist/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/Vestride/Shuffle/master/dist/jquery.shuffle.min.js"></script>
+
 <script>
-	$('.filters li').click(function() {
-		$(this).toggleClass('active');
+	$('.filters li a').click(function() {
+		$(this).parent().toggleClass('active');
+		
+		var filters = [];
+		$('li.active').each(function(){
+			filters.push($(this).data('group'));
+		});
+		console.log(filters);
+		
+		$('.jobs').shuffle( 'shuffle', function($el) {
+			var groups =  $el.data('groups').split(',');
+			for (var i = 0; i < groups.length; i++)
+			{
+				for (var j = 0 ; j < filters.length ; j++)
+				{
+					if (filters[j] == groups[i]) return true;
+				}
+			}
+			console.log('groups : ', groups);
+			console.log('not found');
+			return false;
+      	});
+	
+		/*$('.jobs li').each(function(){
+			if (Math.random()<0.5) $(this).fadeIn(); else $(this).fadeOut();
+		});*/
+		return true == false;
 	});
+	
+	$('.jobs').shuffle({
+		delimiter: ',',
+		itemSelector: 'li' // the selector for the items in the grid
+    });
+	$('.jobs').shuffle('shuffle','x');
+	
+
+   
 </script>
 
 {% endblock %}
