@@ -1,3 +1,5 @@
+/* NOT USED. ELEMENTS/_ICONS IS USED INSTEAD */
+
 i{
   background-color: red;
   &.icon{
@@ -6,10 +8,15 @@ i{
     &.ordi{
       background-image: url("../media/computer.svg");
       background-color: red;
-      width: 11px;
+      width: 12px;
     }
-    &.place{
-
-    }
+	&.expand {
+	  background-image: url("../media/expand.png");
+	  width: 18px; height: 18px;
+	}
+	&.contract {
+	  background-image: url("../media/contract.png");
+	  width: 18px; height: 18px;
+	}
   }
 }

@@ -1,5 +1,4 @@
 i{
-  background-color: red;
   &.icon{
     height: 15px;
     display: inline-block;
@@ -11,5 +10,15 @@ i{
     &.place{
 
     }
+	&.expand {
+	  background-image: url("../media/expand.png");
+	  width: 18px; height: 18px;
+		cursor: pointer;
+	}
+	&.contract {
+	  background-image: url("../media/contract.png");
+	  width: 18px; height: 18px;
+		cursor: pointer;
+	}
   }
 }

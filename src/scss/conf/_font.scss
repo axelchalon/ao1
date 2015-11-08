@@ -13,7 +13,7 @@ $opensans: 'Open Sans', sans-serif;
 h1, h2{
   position: relative;
   text-align: left;
-  &:before{
+  &:not(.no-left-border):before{
     content: "";
     position: absolute;
     left: -20px; top:0px; bottom:0px;

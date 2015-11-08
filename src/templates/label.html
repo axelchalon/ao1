@@ -1,0 +1,59 @@
+{% set hide_topbar = true %}
+{% set catch_button = false %}
+{% set bg_header = "hero-label.jpg" %}
+{% set text_header = "Pourquoi labelliser votre formation ?" %}
+{% set span_header = "Des avantages et une reconnaissance nationale à la clé" %}
+
+{% extends "template.html" %}
+
+{% block y %}
+
+<div class="main label">
+  <div class="wrap">
+    <div class="header">
+		<h2 class="no-left-border">Dispositif de labellisation</h2>
+
+		<hr>
+
+		<p>La Grande école du numérique, en partenariat avec le ministère de la ville, de la jeunesse et des sports, le ministère de l’économie, de l’industrie et du numérique, le ministère du travail, de l’emploi, de la formation professionnelle et du dialogue social, le ministère de l’éducation nationale, de l’enseignement supérieur et de la recherche et le Commissariat général à l’investissement, lance son premier appel à labellisation de « Fabriques du numérique ».</p>
+		<p>Forte de ce constat la Grande École du numérique a pour objectif de répondre aux besoins d’emplois dans le secteur du numérique et de favoriser l’insertion sociale et professionnelle des jeunes - en particulier de ceux qui ne suivent pas de formation et n’occupent pas d’emploi - et plus largement de tous les publics en reconversion.</p>
+		<p>Pour cela, la Grande École du numérique vise à structurer sur l’ensemble du territoire national une offre de formations, « les fabriques du numérique », permettant la diversification des publics concernés et renouvelant les approches pédagogiques. Elle a pour objectif la reconnaissance de ces formations par une certification ainsi que l’adaptation de ces formations aux besoins d’un secteur d’activité en mutation permanente.</p>
+   	</div>
+	
+	<article>
+		<i class="icon expand"></i><h3>Quels bénéfices une formation peut-elle attendre du label "Grande école du Numérique" ?</h3><div class="clearfix"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus in dolores vel non omnis sint deleniti! Optio repellendus delectus nisi soluta obcaecati vero excepturi nam. Earum, error. Iusto nisi, labore reiciendis dolores, eveniet quod doloremque repudiandae molestias dolorem recusandae quaerat cum sint ipsum nulla soluta est quam praesentium cumque necessitatibus aliquam accusamus nemo odio aut! Ab at a sapiente maxime eligendi veritatis facere consequatur, quas fugit sed quis nisi laudantium nesciunt voluptas iusto, tenetur, quia suscipit quaerat accusantium non in laborum! Quae suscipit ex eius nisi, necessitatibus exercitationem architecto voluptates, aliquid. Assumenda eligendi dignissimos modi quaerat amet optio, a.</p>
+	</article>
+	
+	<article>
+		<i class="icon expand"></i><h3>Y aura-t-il d'autres écosystèmes labellisés ? Si oui, quand et combien ?</h3><div class="clearfix"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus in dolores vel non omnis sint deleniti! Optio repellendus delectus nisi soluta obcaecati vero excepturi nam. Earum, error. Iusto nisi, labore reiciendis dolores, eveniet quod doloremque repudiandae molestias dolorem recusandae quaerat cum sint ipsum nulla soluta est quam praesentium cumque necessitatibus aliquam accusamus nemo odio aut! Ab at a sapiente maxime eligendi veritatis facere consequatur, quas fugit sed quis nisi laudantium nesciunt voluptas iusto, tenetur, quia suscipit quaerat accusantium non in laborum! Quae suscipit ex eius nisi, necessitatibus exercitationem architecto voluptates, aliquid. Assumenda eligendi dignissimos modi quaerat amet optio, a.</p>
+	</article>
+	
+	<article>
+		<i class="icon expand"></i><h3>Critères de labellisation "Fabriques du numériques"</h3><div class="clearfix"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus in dolores vel non omnis sint deleniti! Optio repellendus delectus nisi soluta obcaecati vero excepturi nam. Earum, error. Iusto nisi, labore reiciendis dolores, eveniet quod doloremque repudiandae molestias dolorem recusandae quaerat cum sint ipsum nulla soluta est quam praesentium cumque necessitatibus aliquam accusamus nemo odio aut! Ab at a sapiente maxime eligendi veritatis facere consequatur, quas fugit sed quis nisi laudantium nesciunt voluptas iusto, tenetur, quia suscipit quaerat accusantium non in laborum! Quae suscipit ex eius nisi, necessitatibus exercitationem architecto voluptates, aliquid. Assumenda eligendi dignissimos modi quaerat amet optio, a.</p>
+	</article>
+	
+	<article>
+		<i class="icon expand"></i><h3>Documents à télécharger</h3><div class="clearfix"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus in dolores vel non omnis sint deleniti! Optio repellendus delectus nisi soluta obcaecati vero excepturi nam. Earum, error. Iusto nisi, labore reiciendis dolores, eveniet quod doloremque repudiandae molestias dolorem recusandae quaerat cum sint ipsum nulla soluta est quam praesentium cumque necessitatibus aliquam accusamus nemo odio aut! Ab at a sapiente maxime eligendi veritatis facere consequatur, quas fugit sed quis nisi laudantium nesciunt voluptas iusto, tenetur, quia suscipit quaerat accusantium non in laborum! Quae suscipit ex eius nisi, necessitatibus exercitationem architecto voluptates, aliquid. Assumenda eligendi dignissimos modi quaerat amet optio, a.</p>
+	</article>
+	
+  </div>
+</div>
+
+<script>
+	$('article p').hide();
+	
+	$('article').on('click','.expand', function() {
+		$(this).siblings('p').slideDown(); $(this).removeClass('expand').addClass('contract');
+	});
+	
+	$('article').on('click','.contract', function() {
+		$(this).siblings('p').slideUp(); $(this).removeClass('contract').addClass('expand');
+	});
+	
+</script>
+
+{% endblock %}
