@@ -111,7 +111,7 @@ hr {
 	}
 }
 
-.main.label {
+.main.label, .main.faq {
 	hr {
 	height: 3px;
     width: 30px;
@@ -125,10 +125,13 @@ hr {
 		> p:first-of-type { font-weight: bold; }
 		> p { margin: 25px auto; }
 	}
-	i { float: right; }
+	i { float: right; margin-top: 15px; margin-right: 15px; }
 	article {
-		margin-bottom: 52px;
-		h3 { padding-bottom: 15px; border-bottom: 3px solid $bleu-clair; margin-bottom: 5px; }
+		margin-bottom: 37px;
+		h3 {
+			padding: 15px; border-bottom: 3px solid $bleu-clair; margin-bottom: 5px; cursor: pointer;
+			&:hover { background: #E1E1E1; }
+		}
 		p {  }
 	}
 }
@@ -185,5 +188,35 @@ hr {
 				}
 			}
 		}	
+	}
+}
+
+.main.faq {
+	ul.posts {
+		li {
+			display: flex;
+			background: white;
+			border-bottom: 2px solid #E7E7E7; &:last-child { border-bottom: 0; }
+			padding: 0 15px;
+			
+			> * { padding: 20px; }
+			
+			.left:before {
+				content: " "; display: block;
+				border-radius: 50%; 
+				width: 75px; height: 75px;
+				background: url("http://lorempixel.com/75/75/") center center no-repeat;
+			}
+			.center {
+				flex-grow: 1;
+				position: relative;
+				h4 { color: inherit; text-align: left; font-size: 20px; margin-bottom: 5px; }
+				.sub { color: $gris-clair; font-size: 10px; /*position: absolute; bottom: 15px; left: 20px; right: 20px;*/ }
+			}
+			.right {
+				color: $gris-clair; 
+				i { float: none; }
+			}
+		}
 	}
 }
