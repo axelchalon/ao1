@@ -47,9 +47,14 @@ header.header{
     text-align: center;
   }
   nav.navigation{
-    margin-left: 20px;
     li{
       display: inline-block;
+      padding-left: 21px;
+      padding-right: 21px;
+      border-right: 1px solid #f7f7f7;
+      span{
+        display: none;
+      }
     }
   }
 }
@@ -95,5 +100,33 @@ aside {
         color:#fff;
       }
     }
+  }
+}
+
+nav.container-menu-burger{
+  background-color: $bleu-main;
+  position: absolute;
+  top:-60px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: $opensans;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  &.open{
+    transform: translate3d(0,60,0);
+  }
+  li{
+    height: 60px;
+    display: flex;
+    align-item:center;
+    justify-content: center;
+    text-align: center;
+    width: calc(100%/8);
+    border-right:2px solid #2c3e50;
   }
 }

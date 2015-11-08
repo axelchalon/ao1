@@ -1,6 +1,7 @@
 i{
   &.icon{
     height: 15px;
+    background-repeat: no-repeat;
     display: inline-block;
     &.ordi{
       background-image: url("../media/computer.svg");
@@ -8,6 +9,14 @@ i{
     }
     &.place{
 
+    }
+    &.malette{
+      background-image: url("../media/malette.svg");
+      width: 20px;
+      height: 17px;
+      background-size: cover;
+      margin: 0 auto;
+      vertical-align: middle;
     }
     &.formation{
       background-image: url("../media/formation.png");
@@ -32,6 +41,21 @@ i{
       width: 29px;
       height: 30px;
       margin: 0 auto;
+    }
+    &.header-formation{
+      background-image: url("../media/formation-header.png");
+      width: 28px;
+      height: 18px;
+    }
+    &.header-entreprise{
+      background-image: url("../media/entreprise.png");
+      width: 21px;
+      height: 18px;
+    }
+    &.header-forum{
+      background-image: url("../media/forum.png");
+      width: 21px;
+      height: 16px;
     }
 	&.expand {
 	  background-image: url("../media/expand.png");

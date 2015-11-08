@@ -29,5 +29,10 @@
     "postcss-mixins": "^2.1.1",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^1.1.0"
+  },
+  "dependencies": {
+    "cssnano": "^3.3.2",
+    "es6-promise": "^3.0.2",
+    "gulp-concat": "^2.6.0"
   }
 }
