@@ -30,6 +30,13 @@ gulp.task('scss', function () {
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('dist/css/'))
 		.pipe(browserSync.stream());
+
+	gulp.src('src/scss/dashboard.scss')
+		.pipe(plumber())
+		.pipe(sass())
+		.pipe(postcss(processors))
+		.pipe(gulp.dest('dist/css/'))
+		.pipe(browserSync.stream());
 });
 
 gulp.task('js', function () {

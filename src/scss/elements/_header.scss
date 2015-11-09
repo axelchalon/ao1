@@ -106,8 +106,9 @@ aside {
 nav.container-menu-burger{
   background-color: $bleu-main;
   position: absolute;
-  top:-60px;
-  display: none;
+  transform: translate3d(0,-60px,0);
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   height: 60px;
@@ -118,7 +119,7 @@ nav.container-menu-burger{
   font-weight: 700;
   text-align: left;
   &.open{
-    transform: translate3d(0,60,0);
+    transform: translate3d(0,0px,0);
   }
   li{
     height: 60px;
@@ -129,4 +130,13 @@ nav.container-menu-burger{
     width: calc(100%/8);
     border-right:2px solid #2c3e50;
   }
+}
+
+nav.container-menu-burger, header.header, .container-total, header.hero{
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.open{
+  transform: translate3d(0,60px,0);
 }

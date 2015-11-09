@@ -7,15 +7,6 @@
 @import "elements/icon";
 @import "elements/aside";
 @import "elements/fiche";
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
 
 .clearfix { clear: both; }
 
@@ -39,8 +30,12 @@ hr {
 
 
 .main.home {
-	margin-top: 40px;
+	// margin-top: 40px;
 	padding: 80px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 	.wrap {
 		/*width:1270px;*/
 		margin: 0 auto;
@@ -87,6 +82,69 @@ hr {
 				font-weight: 400;
 				line-height: 21px;
 				width: 90%;
+			}
+		}
+	}
+	article.dossier{
+		position: relative;
+		width: 100%; height: 407px;
+		.pictures{
+			width: 55%;
+			height: 327px;
+			background-size: cover;
+			position: absolute;
+			top: 0; left:0;
+			.dos{
+				position: absolute;
+				background-color: $bleu-main;
+				width: 135px;
+				height: 40px;
+				font-family: OpenSans;
+				color:  #ffffff;
+				font-size: 12px;
+				font-weight: 700;
+				text-align: center;
+				line-height: 40px;
+				right:-135px; top:0;
+				text-transform: uppercase;
+			}
+		}
+		.description{
+			position: absolute;
+			bottom:0; right:0;
+			background-color: #fff;
+			width: 55%;
+			height: 367px;
+			h2{
+				margin-top: 92px;
+				margin-left: 130px;
+				margin-bottom: 29px;
+				font-family: OpenSans;
+				color:  #000000;
+				font-size: 30px;
+				font-weight: 400;
+				span{
+					font-family: OpenSans;
+					color:  #000000;
+					font-size: 30px;
+					font-weight: 700;
+				}
+			}
+			.btn{
+					margin-top: 33px;
+					border-radius: 0px;
+					position: absolute;
+					right: 77px; bottom: 30px;
+				}
+			p{
+				margin-left: 130px;
+				font-family: Lato;
+				color:  #000000;
+				font-size: 16px;
+				width: 470px;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: left;
 			}
 		}
 	}

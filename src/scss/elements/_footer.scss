@@ -8,11 +8,12 @@ footer.footer{
   h4{
     text-align: left;
     margin-top: 50px;
+    color: $bleu-main;
     text-transform: uppercase;
   }
   p{
     font-family: OpenSans;
-    color:  #ffffff;
+    color: $bleu-main;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -20,9 +21,9 @@ footer.footer{
   .head-foot{
     height: 171px;
     display: flex;
-    background-color: $bleu-main;
+    background-color: #fff;
     hr{
-      background-color:  #ffffff;
+      background-color:  $bleu-main;
       width: 21px;
       height: 3px;
       display: inline-block;
