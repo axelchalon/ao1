@@ -177,6 +177,8 @@
 								</ul>
 								
 								<a href="#" class="prev"></a>
+								<a href="parcourir_metiers.html" class="next goto_parcourir_metiers"></a> <!-- découvrir snapchat -->
+								
 						</div>
 						
 						
@@ -223,7 +225,7 @@ function checkKey(e) {
 }
 	
 $('.prev').click(function() { $('.snapchat-nav div.done').last().prev().click(); return false; });
-$('.next').click(function() { $('.snapchat-nav div.done').last().next().click(); return false; });
+$('.next:not(.goto_parcourir_metiers)').click(function() { $('.snapchat-nav div.done').last().next().click(); return false; });
 	
 </script>
 
