@@ -41,7 +41,7 @@
 			<div class="center">
 				<h4>Profil plutôt créatif ; quelle formation me conseillez-vous ? </h4>
 				<p>Bonjour, j'aimerais avoir vos conseils pour une formation qui me conviendrait.</p>
-				<p class="sub">16 réponses &mdash; Dernière réponse aujourd'hui à 14:24 &mdash; Posté par Matthieu</p>
+				<p class="sub">16 réponses &mdash; Dernière réponse il y a 7 heures &mdash; Posté par Matthieu</p>
 			</div>
 			
 			<!--<div class="right">
@@ -58,6 +58,9 @@
 </div>
 
 <script>
+	
+	$('.posts li').click(function(){ $('<a href="faq_rep.html"></a>').appendTo('body').get(0).click(); });
+	
 	$('article p').hide();
 	
 	$('h3').click (function() {

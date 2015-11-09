@@ -1,0 +1,79 @@
+{% set hide_topbar = true %}
+{% set no_hero = true %}
+{% set catch_button = false %}
+{% set bg_header = "hero-label.jpg" %}
+{% set text_header = "Foire aux questions" %}
+{% set span_header = "Echangez avec des étudiants et des représentants de la GEN" %}
+
+{% extends "template.html" %}
+
+{% block y %}
+
+<div class="main faq_rep">
+  <div class="wrap">
+
+	
+	<ul class="posts">
+		<li>
+			<div class="upper">
+				<div class="left">
+
+				</div>
+
+				<div class="center">
+					<h4>Profil plutôt créatif ; quelle formation me conseillez-vous ? </h4>
+					<p class="sub">16 réponses &mdash; Posté par Matthieu &mdash; Dernière réponse il y a 7 heures</p>
+					<hr>
+				</div>
+			</div>
+			
+			<p class="lower">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem deserunt tenetur nostrum accusamus laborum inventore animi tempore beatae nihil incidunt fuga dolorum placeat illo vel atque laudantium, repellat, non ex nobis numquam, harum fugiat, nemo. Pariatur natus, molestias earum, iusto autem architecto quisquam doloremque, aperiam enim asperiores et. Dolor tenetur dolores ipsam est veniam praesentium, ipsum, blanditiis, excepturi quos quia voluptas ut error velit sed hic facere incidunt odit vero. Ipsa quod debitis eveniet delectus cum inventore, fugit rem voluptatibus cumque saepe placeat corporis quo obcaecati doloribus quos, at non veritatis vel culpa quam repellat nam aspernatur reprehenderit repudiandae. Quia!
+			</p>
+			
+		</li>
+	
+		{% for counter in [071,50,85,61,98] %}
+		<li>
+			
+			<p class="lower">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem deserunt tenetur nostrum accusamus laborum inventore animi tempore beatae nihil incidunt fuga dolorum placeat illo vel atque laudantium, repellat, non ex nobis numquam, harum fugiat, nemo. Pariatur natus, molestias earum, iusto autem architecto quisquam doloremque, aperiam enim asperiores et. Dolor tenetur dolores ipsam est veniam praesentium, ipsum, blanditiis, excepturi quos quia voluptas ut error velit sed hic facere incidunt odit vero. Ipsa quod debitis eveniet delectus cum inventore, fugit rem voluptatibus cumque saepe placeat corporis quo obcaecati doloribus quos, at non veritatis vel culpa quam repellat nam aspernatur reprehenderit repudiandae. Quia!
+			</p>
+			
+			<div class="even-lower">
+				<div class="right">
+
+				</div>
+
+				<div class="center">
+					{% if counter==7 %}
+					<h4>Profil plutôt créatif ; quelle formation me conseillez-vous ? </h4>
+					{% endif %}
+					<p class="sub">Posté par Jeanne il y a 7 heures</p>
+					<hr>
+				</div>
+			</div>
+			
+		</li>
+		{% endfor %}
+	</ul>
+	
+  </div>
+</div>
+
+<script>
+	$('article p').hide();
+	
+	$('h3').click (function() {
+		if ($(this).siblings('i').hasClass('expand'))
+		{
+			$(this).siblings('p').slideDown(); $(this).siblings('i').removeClass('expand').addClass('contract');
+		}
+		else
+		{
+			$(this).siblings('p').slideUp(); $(this).siblings('i').removeClass('contract').addClass('expand');
+		}
+	});
+</script>
+
+{% endblock %}

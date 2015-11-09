@@ -201,6 +201,9 @@ hr {
 .main.faq {
 	ul.posts {
 		li {
+			cursor: pointer; transition: background-color 0.3s;
+			&:hover { background-color: #F1F1F1; transition: none; }
+			
 			display: flex;
 			background: white;
 			border-bottom: 2px solid #E7E7E7; &:last-child { border-bottom: 0; }
@@ -224,6 +227,96 @@ hr {
 				color: $gris-clair; 
 				i { float: none; }
 			}
+		}
+	}
+}
+
+.main.faq_rep {
+	.wrap { padding: 80px; }
+	ul.posts {
+		li {
+			
+			margin-bottom: 30px;
+			
+			background: white;
+			border-bottom: 2px solid #E7E7E7; &:last-child { border-bottom: 0; }
+			padding: 0 15px;
+			
+			> * { padding: 20px; }
+			
+			.upper {
+			
+				.left:before {
+					content: " "; display: block;
+					border-radius: 50%; 
+					width: 75px; height: 75px;
+					background: url("http://lorempixel.com/75/75/") center center no-repeat;
+					float: left;
+				}
+				.center {
+					margin-left: 110px;
+					position: relative;
+					top: 15px;
+					h4 { color: inherit; text-align: left; font-size: 20px; margin-bottom: 5px; }
+					.sub { color: $gris-clair; font-size: 10px; /*position: absolute; bottom: 15px; left: 20px; right: 20px;*/ }
+				}
+				
+				&:after {
+				clear: both; display: block; 
+				}
+			}
+			
+			.even-lower {
+			
+				padding: 0;
+				text-align: right;
+				
+				p { text-align: right; }
+				
+				.right { display: none; }
+				
+				.right:before {
+					content: " "; display: block;
+					border-radius: 50%; 
+					width: 50px; height: 50px;
+					background: url("http://lorempixel.com/50/50/?") center center no-repeat;
+					float: right;
+				}
+				.center {
+					margin-left: 110px;
+					position: relative;
+					h4 { color: inherit; text-align: left; font-size: 20px; margin-bottom: 5px; }
+					.sub { color: $gris-clair; font-size: 10px; /*position: absolute; bottom: 15px; left: 20px; right: 20px;*/ }
+				}
+				
+				&:after {
+				clear: both; display: block; content: " ";
+				}
+			}
+			
+			&:not(:first-of-type) {
+				.upper {
+
+					.left:before {
+						content: " "; display: block;
+						border-radius: 50%; 
+						width: 50px; height: 50px;
+						background: url("http://lorempixel.com/75/75/") center center no-repeat;
+						float: left;
+					}
+					.center {
+						margin-left: 75px;
+					}
+				}
+			}
+			
+			.lower {
+				
+			}
+		}
+		
+		li:not(:first-of-type) {
+			margin: 40px;	
 		}
 	}
 }
