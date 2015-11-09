@@ -222,7 +222,7 @@ hr {
 	}
 }
 
-.main.snapchat {
+.main.snapchat, .main.web {
 	
 	.header {
 		background: $bleu-main;
@@ -287,6 +287,7 @@ hr {
 		}
 	}
 	
+	
 	> .wrap.slides {
 		
 		
@@ -299,7 +300,7 @@ hr {
 			transition: transform 0.6s ease-in-out;
 			
 			.slide {
-
+				background: no-repeat center center /cover;
 				vertical-align: bottom;
 				display: inline-block;
 				width: 100%;
@@ -353,30 +354,7 @@ hr {
 					}
 				}
 			}
-			
-			.slide1 .left {
-				 background: url("../media/snapchat1.jpg") no-repeat center center /cover;
-			}
-			
-			.slide2 .right {
-				 background: url("../media/snapchat2.jpg") no-repeat center center /cover;
-			}
-			
-			.slide3 .left {
-				 background: url("../media/snapchat3.jpg") no-repeat center center /cover;
-			}
-			
-			.slide4 .right {
-				 background: url("../media/snapchat4.jpg") no-repeat center center /cover;
-			}
-			
-			.slide5 .left {
-				 background: url("../media/snapchat5.jpg") no-repeat center center /cover;
-			}
-			
-			.slide6 .right {
-				 background: url("../media/snapchat6.jpg") no-repeat center center /cover;
-			}
+
 		}
 	}
 }
