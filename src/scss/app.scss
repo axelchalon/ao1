@@ -165,17 +165,21 @@ hr {
 			background: url("http://lorempixel.com/240/160/") top center no-repeat white;
 			padding-top: 160px;
 			width: 240px; height: 350px;
-			box-shadow: 2px 2px 7px black;
-			&:before {
+			box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+			
+			
+				
+			/*&:before {
 				content: " ";
 				height: 3px;
 				background: red;
 				display: block;
-			}
+			}*/
 			
 			.inner-wrap { 
 				padding: 10px 20px;
-			
+				border-top: 3px solid red;
+				
 				h4 {
 					color: inherit;
 					text-align: left;
