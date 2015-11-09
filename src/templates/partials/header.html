@@ -53,6 +53,7 @@ top
 </header>
 
 
+{% if not no_hero %}
 <header class="hero" style="background-image: url('media/{{bg_header}}');">
   <div class="title">
     <h1>{{text_header}} <span>{{span_header}}</span></h1>
@@ -63,3 +64,4 @@ top
   </div>
   {% endif %}
 </header>
+{% endif %}
