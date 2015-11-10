@@ -1,0 +1,51 @@
+{% set hide_topbar = true %}
+{% set catch_button = false %}
+{% set bg_header = "hero-label.jpg" %}
+{% set text_header = "Entreprises" %}
+{% set span_header = "Déposez vos offres d'emploi et devenez partenaire" %}
+
+{% extends "template.html" %}
+
+{% block y %}
+
+<div class="main label">
+  <div class="wrap">
+    <div class="header">
+		<h2 class="no-left-border">Un vivier compétent et dynamique</h2>
+
+		<hr>
+
+		<p>La Grande École du numérique a pour objectif de répondre aux besoins d’emplois dans le secteur du numérique et de favoriser l’insertion sociale et professionnelle des jeunes - en particulier de ceux qui ne suivent pas de formation et n’occupent pas d’emploi - et plus largement de tous les publics en reconversion.</p>
+		<p>Pour cela, la Grande École du numérique vise à structurer sur l’ensemble du territoire national une offre de formations, « les fabriques du numérique », permettant la diversification des publics concernés et renouvelant les approches pédagogiques. Elle a pour objectif la certification des compétences des étudiants formés.</p>
+   	</div>
+	
+	<article>
+		<i class="icon expand"></i><h3>Pourquoi participer à la Grande &Eacute;cole du Numérique en tant qu'entrepise ?</h3><div class="clearfix"></div>
+		<p>La Grande &Eacute;cole du Numérique facilite la mise en relation des chercheurs d'emploi avec les entreprises. En tant qu'entreprise, vous pouvez très facilement déposer votre offre d'emploi sur notre plateforme ou bien parcourir les CVs déposés sur le site.</p>
+	</article>
+	
+	<article>
+		<i class="icon expand"></i><h3>Comment devenir partenaire de la Grande &Eacute;cole du Numérique ?</h3><div class="clearfix"></div>
+		<p>Vous n'avez pas besoin d'être partenaire de la Grande &Eacute;cole du Numérique pour pouvoir bénéficier de ses services. Cependant, si vous souhaitez vous impliquer davantage dans l'initiatve portée par la Grande &Eacute;cole du Numérique, vous pouvez également devenir partenaire. Vous serez mis en avant sur le site et pourrez mieux intégrer votre entreprise au sein des publics concernés par notre plateforme. Des précisions seront bientôt communiquées concernant les dossiers de partenariat à nous fournir.</p>
+	</article>
+	
+  </div>
+</div>
+
+<script>
+	$('article p').hide();
+	
+	$('h3').click (function() {
+		if ($(this).siblings('i').hasClass('expand'))
+		{
+			$(this).siblings('p').slideDown(); $(this).siblings('i').removeClass('expand').addClass('contract');
+		}
+		else
+		{
+			$(this).siblings('p').slideUp(); $(this).siblings('i').removeClass('contract').addClass('expand');
+		}
+	});
+	
+</script>
+
+{% endblock %}

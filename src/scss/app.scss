@@ -193,7 +193,10 @@ hr {
 			padding: 15px; border-bottom: 3px solid $bleu-clair; margin-bottom: 5px; cursor: pointer; 
 			&:hover { background: #E1E1E1; }
 		}
-		p {  }
+		p { 
+			
+			a { color: $bleu-clair; }
+		}
 	}
 }
 
@@ -518,6 +521,7 @@ hr {
 }
 
 .main.web .header nav:before { width: 160px; }
+
 
 
 /*
