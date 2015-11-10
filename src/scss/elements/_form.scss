@@ -31,6 +31,15 @@ form.offers {
     &:before{
       content: none;
     }
+    &:after{
+      content: "";
+      background-color:  #0b6ba8;
+      width: 26px;
+      height: 3px;
+      display: block;
+      margin-top: 11px;
+      margin-bottom: 20px;
+    }
   }
   p{
     font-family: OpenSans;
@@ -62,7 +71,7 @@ form.offers {
       text-align: left;
       font-family: OpenSans;
       color:  #000000;
-      font-size: 12px;
+      font-size: 12px;/* Approximation causée par une substitution de police */
       font-weight: 700;
       padding-right: 20px;
     }
