@@ -100,7 +100,7 @@ hr {
 				background-color: $bleu-main;
 				width: 135px;
 				height: 40px;
-				font-family: OpenSans;
+				font-family: $opensans;
 				color:  #ffffff;
 				font-size: 12px;
 				font-weight: 700;
@@ -120,12 +120,12 @@ hr {
 				margin-top: 92px;
 				margin-left: 130px;
 				margin-bottom: 29px;
-				font-family: OpenSans;
+				font-family: $opensans;
 				color:  #000000;
 				font-size: 30px;
 				font-weight: 400;
 				span{
-					font-family: OpenSans;
+					font-family: $opensans;
 					color:  #000000;
 					font-size: 30px;
 					font-weight: 700;
@@ -139,7 +139,7 @@ hr {
 				}
 			p{
 				margin-left: 130px;
-				font-family: Lato;
+				font-family: $lato;
 				color:  #000000;
 				font-size: 16px;
 				font-weight: 400;
@@ -554,7 +554,7 @@ hr {
 		text-align: center;
 		line-height: 74px;
 		display: inline-block;
-		font-family: OpenSans;
+		font-family: $opensans;
 		color:  #ffffff;
 		font-size: 16px;
 		font-weight: 700;
@@ -563,7 +563,7 @@ hr {
 
 .main.searchpage{
 	h1{
-		font-family: OpenSans;
+		font-family: $opensans;
 		color:  #4d6069;
 		font-size: 36px;
 		font-weight: 700;
@@ -578,7 +578,7 @@ hr {
 		margin:0 auto;
 		width: 200px;
 		h2{
-			font-family: OpenSans;
+			font-family: $opensans;
 			color:  #55acee;
 			font-size: 18px;
 			font-weight: 700;
@@ -589,7 +589,7 @@ hr {
 			}
 		}
 		p{
-			font-family: OpenSans;
+			font-family: $opensans;
 			color:  #4d6069;
 			font-size: 14px;
 			font-weight: 700;
@@ -597,7 +597,7 @@ hr {
 			text-align: left;
 		}
 		.words{
-			font-family: OpenSans;
+			font-family: $opensans;
 			color:  #55acee;
 			font-size: 14px;
 			font-weight: 700;
@@ -618,7 +618,7 @@ hr {
 				padding-left: 20px;
 				margin-bottom: 15px;
 				h4{
-					font-family: OpenSans;
+					font-family: $opensans;
 					color:  #000000;
 					font-size: 11px;
 					font-weight: 300;
@@ -627,7 +627,7 @@ hr {
 					text-transform: uppercase;
 				}
 				h2{
-					font-family: OpenSans;
+					font-family: $opensans;
 					color:  #4d6069;
 					font-size: 18px;
 					font-weight: 700;
@@ -639,7 +639,7 @@ hr {
 					}
 				}
 				.cat{
-					font-family: OpenSans;
+					font-family: $opensans;
 					color:  #55acee;
 					font-size: 14px;
 					font-weight: 700;
@@ -669,4 +669,10 @@ hr {
 			}
 		}
 	}
+}
+
+.calltoaction{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 50px;
 }

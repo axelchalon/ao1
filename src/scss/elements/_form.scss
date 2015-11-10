@@ -6,7 +6,7 @@
   padding-bottom: 42px;
   margin-bottom: 57px;
   h1{
-    font-family: OpenSans;
+    font-family: $opensans;
     color:  #3d4750;
     font-size: 30px;
     font-weight: 700;
@@ -23,7 +23,7 @@ form.offers {
   width: 900px;
   margin:0 auto;
   h2{
-    font-family: OpenSans;
+    font-family: $opensans;
     color:  #000000;
     font-size: 21px;
     font-weight: 700;
@@ -42,7 +42,7 @@ form.offers {
     }
   }
   p{
-    font-family: OpenSans;
+    font-family: $opensans;
     color:  #000000;
     font-size: 12px;
     font-weight: 400;
@@ -69,7 +69,7 @@ form.offers {
       width:30%;
       display: inline-block;
       text-align: left;
-      font-family: OpenSans;
+      font-family: $opensans;
       color:  #000000;
       font-size: 12px;/* Approximation causée par une substitution de police */
       font-weight: 700;
