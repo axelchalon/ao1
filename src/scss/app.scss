@@ -549,3 +549,113 @@ hr {
 		font-weight: 700;
 	}
 }
+
+.main.searchpage{
+	h1{
+		font-family: OpenSans;
+		color:  #4d6069;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: center;
+		margin-top: 46px;
+		margin-bottom: 23px;
+	}
+	.metainfo{
+		border-left: 3px solid #55acee;
+		padding-left: 20px;
+		margin:0 auto;
+		width: 200px;
+		h2{
+			font-family: OpenSans;
+			color:  #55acee;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 24px;
+			text-align: left;
+			&:before{
+				content: none;
+			}
+		}
+		p{
+			font-family: OpenSans;
+			color:  #4d6069;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+			text-align: left;
+		}
+		.words{
+			font-family: OpenSans;
+			color:  #55acee;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+			text-align: left;
+		}
+	}
+	.results{
+		border-top:1px solid #55acee;
+		width: 700px;
+		margin: 0 auto;
+		padding-top: 34px;
+		margin-top: 23px;
+		article{
+			margin-bottom: 70px;
+			.metadata{
+				border-left: 3px solid #55acee;
+				padding-left: 20px;
+				margin-bottom: 15px;
+				h4{
+					font-family: OpenSans;
+					color:  #000000;
+					font-size: 11px;
+					font-weight: 300;
+					line-height: 24px;
+					text-align: left;
+					text-transform: uppercase;
+				}
+				h2{
+					font-family: OpenSans;
+					color:  #4d6069;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 24px;
+					text-align: left;
+					text-transform: uppercase;
+					&:before{
+						content: none;
+					}
+				}
+				.cat{
+					font-family: OpenSans;
+					color:  #55acee;
+					font-size: 14px;
+					font-weight: 700;
+					line-height: 24px;
+					text-align: left;
+					text-transform: uppercase;
+					nav{
+						display: inline-block;
+					}
+					li{
+						display: inline-block;
+						list-style-type: none;
+					}
+				}
+			}
+			p{
+				font-family: Merriweather;
+				color:  #000000;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: left;
+				span{
+					font-weight: 700;
+					color:  #55acee;
+				}
+			}
+		}
+	}
+}
