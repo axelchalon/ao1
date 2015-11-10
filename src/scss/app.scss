@@ -518,3 +518,31 @@ hr {
 }
 
 .main.web .header nav:before { width: 160px; }
+
+
+/*
+		DASHBOARD
+ */
+
+.dash-admin{
+	background-color: #3d4750;
+	.wrap{
+		width: 990px; height: 74px;
+		margin:0 auto;
+		display: flex;
+		align-item:center;
+    justify-content: center;
+    text-align: center;
+	}
+	a{
+		width: calc(100%/3);
+		height: 74px;
+		text-align: center;
+		line-height: 74px;
+		display: inline-block;
+		font-family: OpenSans;
+		color:  #ffffff;
+		font-size: 16px;
+		font-weight: 700;
+	}
+}

@@ -28,14 +28,8 @@ form.offers {
     font-size: 21px;
     font-weight: 700;
     text-align: left;
-    &:after{
-      content: "";
-      background-color:  #0b6ba8;
-      width: 26px;
-      height: 3px;
-      display: block;
-      margin-top: 11px;
-      margin-bottom: 20px;
+    &:before{
+      content: none;
     }
   }
   p{
@@ -68,7 +62,7 @@ form.offers {
       text-align: left;
       font-family: OpenSans;
       color:  #000000;
-      font-size: 12px;/* Approximation causée par une substitution de police */
+      font-size: 12px;
       font-weight: 700;
       padding-right: 20px;
     }
