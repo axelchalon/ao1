@@ -3,6 +3,22 @@ header.header{
   width: 100%; height: 46px;
   display: flex;
   align-items: center;
+  .right{
+    .login{
+      text-align: right;
+      margin-right: 20px;
+      font-family: OpenSans;
+      color:  #000000;
+      font-size: 14px;/* Approximation causée par une substitution de police */
+      font-weight: 400;
+      img{
+        width: 21px;
+        height: 24px;
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+    }
+  }
   i{
     background-color: transparent;
   }
