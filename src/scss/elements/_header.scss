@@ -149,10 +149,14 @@ nav.container-menu-burger{
     align-item:center;
     justify-content: center;
     text-align: center;
-    width: calc(100%/8);
+    width: calc(100%/6);
     border-right:2px solid #2c3e50;
     a{
       line-height: 60px;
+      span{
+        padding-left:10px;
+        vertical-align: middle;
+      }
     }
   }
 }
