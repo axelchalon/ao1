@@ -151,6 +151,8 @@ hr {
 }
 
 .main.map {
+	position: relative;
+	height: 730px;
 	.header {
 		width: 960px;
 		margin: 100px auto;
@@ -163,9 +165,18 @@ hr {
 	}
 	
 	h3 { margin-bottom: 1em; }
-	
-	.dummy-map {
-		width: 100%; max-width: 1440px; display: block; margin: auto;
+	.map-container{
+		position: absolute;
+		left:0;
+	}
+	.panel-map{
+		position: absolute;
+		right:0;
+	}
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
 	}
 }
 
